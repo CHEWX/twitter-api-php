@@ -11,17 +11,17 @@ Simple PHP Wrapper for Twitter API v1.1 calls
 **[Examples](https://github.com/J7mbo/twitter-api-php/wiki/Twitter-API-PHP-Wiki)** ||
 **[Wiki](https://github.com/J7mbo/twitter-api-php/wiki)**
 
-[Instructions in StackOverflow post here](http://stackoverflow.com/questions/12916539/simplest-php-example-retrieving-user-timeline-with-twitter-api-version-1-1/15314662#15314662) with examples. This post shows you how to get your tokens and more. 
+[Instructions in StackOverflow post here](http://stackoverflow.com/questions/12916539/simplest-php-example-retrieving-user-timeline-with-twitter-api-version-1-1/15314662#15314662) with examples. This post shows you how to get your tokens and more.
 If you found it useful, please upvote / leave a comment! :)
 
 The aim of this class is simple. You need to:
 
 - Include the class in your PHP code
-- [Create a twitter app on the twitter developer site](https://dev.twitter.com/apps/)
+- [Create a twitter app on the twitter developer site](https://apps.twitter.com/)
 - Enable read/write access for your twitter app
 - Grab your access tokens from the twitter developer site
-- [Choose a twitter API URL to make the request to](https://dev.twitter.com/docs/api/1.1/)
-- Choose either GET / POST (depending on the request) 
+- [Choose a twitter API URL to make the request to](https://dev.twitter.com/rest/reference/)
+- Choose either GET / POST (depending on the request)
 - Choose the fields you want to send with the request (example: `array('screen_name' => 'usernameToBlock')`)
 
 You really can't get much simpler than that. The above bullet points are an example of how to use the class for a POST request to block a user, and at the bottom is an example of a GET request.
@@ -29,7 +29,7 @@ You really can't get much simpler than that. The above bullet points are an exam
 Installation
 ------------
 
-**Normally:** If you *don't* use composer, don't worry - just include TwitterAPIExchange.php in your application. 
+**Normally:** If you *don't* use composer, don't worry - just include TwitterAPIExchange.php in your application.
 
 **Via Composer:** If you realise it's 2015 now and you *do* use composer, here's what you add to your composer.json file to have TwitterAPIExchange.php automatically imported into your vendors folder:
 
@@ -72,7 +72,7 @@ $requestMethod = 'POST';
 
 ```php
 $postfields = array(
-    'screen_name' => 'usernameToBlock', 
+    'screen_name' => 'usernameToBlock',
     'skip_status' => '1'
 );
 ```
